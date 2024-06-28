@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- AstroUI provides the basis for configuring the AstroNvim User Interface
 -- Configuration documentation can be found with `:h astroui`
@@ -19,6 +19,12 @@ return {
       },
       astrodark = { -- a table of overrides/changes when applying the astrotheme theme
         -- Normal = { bg = "#000000" },
+        Normal = { bg = "#000000" },
+        NormalFloat = { bg = "#000000" },
+        NormalNC = { bg = "#000000" },
+        SignColumn = { bg = "#000000" },
+        StatusLine = { bg = "#000000" },
+        VertSplit = { bg = "#000000" },
       },
     },
     -- Icons can be configured throughout the interface

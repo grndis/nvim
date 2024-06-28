@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- AstroCore provides a central place to modify mappings, vim options, autocommands, and more!
 -- Configuration documentation can be found with `:h astrocore`
@@ -31,7 +31,28 @@ return {
         number = true, -- sets vim.opt.number
         spell = false, -- sets vim.opt.spell
         signcolumn = "yes", -- sets vim.opt.signcolumn to yes
-        wrap = false, -- sets vim.opt.wrap
+        wrap = true,
+        breakindent = true,
+        linebreak = true,
+        breakat = [[\ \	;:,!?]],
+        showbreak = "↪ ",
+        breakindentopt = "shift:2,min:20",
+        list = true,
+        listchars = { tab = "» ", trail = "·", extends = ">", precedes = "<", nbsp = "␣", space = "·" },
+        cursorline = true,
+        termguicolors = true,
+        background = "dark",
+        backspace = "indent,eol,start",
+        tabstop = 2,
+        shiftwidth = 2,
+        expandtab = true,
+        autoindent = true,
+        smartindent = true,
+        smarttab = true,
+        softtabstop = 2,
+        shiftround = true,
+        joinspaces = false,
+        swapfile = false,
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)

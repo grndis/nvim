@@ -30,7 +30,8 @@ return {
         relativenumber = true, -- sets vim.opt.relativenumber
         number = true, -- sets vim.opt.number
         spell = false, -- sets vim.opt.spell
-        signcolumn = "yes", -- sets vim.opt.signcolumn to yes
+        signcolumn = "yes",
+        -- wrap options
         wrap = true,
         breakindent = true,
         linebreak = true,
@@ -39,10 +40,12 @@ return {
         breakindentopt = "shift:2,min:20",
         list = true,
         listchars = { tab = "» ", trail = "·", extends = ">", precedes = "<", nbsp = "␣", space = "·" },
+        -- cursorline options
         cursorline = true,
         termguicolors = true,
         background = "dark",
         backspace = "indent,eol,start",
+        -- tabs & indenting
         tabstop = 2,
         shiftwidth = 2,
         expandtab = true,
@@ -52,6 +55,7 @@ return {
         softtabstop = 2,
         shiftround = true,
         joinspaces = false,
+        -- turn off swapfile
         swapfile = false,
       },
       g = { -- vim.g.<key>

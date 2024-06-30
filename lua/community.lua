@@ -18,7 +18,7 @@ return {
   { import = "astrocommunity.recipes.heirline-vscode-winbar" },
   { import = "astrocommunity.recipes.telescope-nvchad-theme" },
   { import = "astrocommunity.color.modes-nvim" },
-  { import = "astrocommunity.indent.indent-rainbowline" },
+  -- { import = "astrocommunity.indent.indent-rainbowline" },
   { import = "astrocommunity.scrolling.vim-smoothie" },
   { import = "astrocommunity.scrolling.nvim-scrollbar" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },

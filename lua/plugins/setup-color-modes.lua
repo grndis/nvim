@@ -5,11 +5,11 @@ return {
       copy = "#f5c359",
       delete = "#c75c6a",
       insert = "#78ccc5",
-      visual = "#9745be",
+      visual = "#D0B5FA",
     },
 
     -- Set opacity for cursorline and number background
-    line_opacity = 0.25,
+    line_opacity = 0.15,
 
     -- Enable cursor highlights
     set_cursor = true,

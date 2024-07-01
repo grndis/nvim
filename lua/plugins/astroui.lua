@@ -14,8 +14,16 @@ return {
     colorscheme = "tokyonight-night",
     -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
     highlights = {
-      init = { -- this table overrides highlights in all themes
-        -- Normal = { bg = "#000000" },
+      init = {
+        -- Normal = { bg = "#15131D" },
+        -- NormalFloat = { bg = "#15131D" },
+        -- NormalNC = { bg = "#15131D" },
+        -- SignColumn = { bg = "#15131D" },
+        -- StatusLine = { bg = "#1A1B26" },
+        -- VertSplit = { bg = "#15131D" },
+        -- TabLine = { bg = "#1A1B26" },
+        -- TabLineFill = { bg = "#1A1B26" },
+        -- TabLineSel = { bg = "#1A1B26" },
       },
       astrodark = { -- a table of overrides/changes when applying the astrotheme theme
         Normal = { bg = "#0D1116" },

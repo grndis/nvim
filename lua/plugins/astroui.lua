@@ -10,6 +10,11 @@ return {
   "AstroNvim/astroui",
   ---@type AstroUIOpts
   opts = {
+    status = {
+      colors = {
+        buffer_active_bg = "#2A2F41",
+      },
+    },
     -- change colorscheme
     colorscheme = "tokyonight-night",
     -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes

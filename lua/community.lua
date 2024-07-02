@@ -14,6 +14,7 @@ return {
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.vue" },
   { import = "astrocommunity.pack.php" },
+  { import = "astrocommunity.pack.blade" },
   { import = "astrocommunity.recipes.neovide" },
   { import = "astrocommunity.recipes.heirline-vscode-winbar" },
   { import = "astrocommunity.recipes.telescope-nvchad-theme" },

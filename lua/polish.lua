@@ -1,4 +1,4 @@
-if true then return end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- This will run last in the setup process and is a good place to configure
 -- things like custom filetypes. This just pure lua so anything that doesn't
@@ -6,13 +6,16 @@ if true then return end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- Set up custom filetypes
 vim.filetype.add {
-  extension = {
-    foo = "fooscript",
-  },
-  filename = {
-    ["Foofile"] = "fooscript",
-  },
+  -- extension = {
+  --   foo = "fooscript",
+  -- },
+  -- filename = {
+  --   ["Foofile"] = "fooscript",
+  -- },
+  -- pattern = {
+  --   ["~/%.config/foo/.*"] = "fooscript",
+  -- },
   pattern = {
-    ["~/%.config/foo/.*"] = "fooscript",
+    [".*%.blade%.php"] = "blade",
   },
 }

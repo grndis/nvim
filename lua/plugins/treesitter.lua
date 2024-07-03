@@ -35,11 +35,7 @@ return {
       },
       filetype = "blade",
     }
-    vim.filetype.add {
-      pattern = {
-        [".*%.blade%.php"] = "blade",
-      },
-    }
+
     require("nvim-treesitter.configs").setup(opts)
   end,
   dependencies = {

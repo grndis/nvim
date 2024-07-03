@@ -18,6 +18,7 @@ return {
       "sql",
       "git_config",
       "html",
+      "css",
       -- add more arguments for adding more treesitter parsers
     },
     highlight = {

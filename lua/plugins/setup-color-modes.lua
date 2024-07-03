@@ -1,3 +1,4 @@
+-- if true then return {} end
 return {
   require("modes").setup {
     colors = {

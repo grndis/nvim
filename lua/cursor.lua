@@ -34,8 +34,8 @@ local function wrapped_formatting(bufnr)
   vim.lsp.buf.format {
     bufnr = bufnr,
     async = true,
+    on_done = function() after_format() end,
   }
-  after_format()
 end
 
 -- Setup autocmds to ensure position preservation
@@ -54,14 +54,22 @@ vim.api.nvim_create_autocmd("LspAttach", {
   callback = function(args)
     local bufnr = args.buf
     local client = vim.lsp.get_client_by_id(args.data.client_id)
+
     if client and client.server_capabilities.documentFormattingProvider then
-      -- Use command to wrap the formatting to ensure position preservation
-      vim.api.nvim_buf_create_user_command(
-        bufnr,
-        "Format",
-        function() wrapped_formatting(bufnr) end,
-        { desc = "Format current buffer with LSP" }
-      )
+      local format_cmd = function() wrapped_formatting(bufnr) end
+
+      -- Use BufWritePre and BufWritePost to handle manual formatting
+      vim.api.nvim_buf_create_user_command(bufnr, "Format", format_cmd, { desc = "Format current buffer with LSP" })
+
+      -- If you want to directly trigger :Format from lsp.buf.format, hook it here
+      -- Ensure manual calls do the same thing
+      vim.api.nvim_buf_set_keymap(bufnr, "n", "<leader>lf", "<cmd>Format<CR>", { noremap = true, silent = true })
     end
   end,
 })
+
+-- Command to manually trigger formatting for the current buffer
+vim.api.nvim_create_user_command("LspFormat", function()
+  local bufnr = vim.api.nvim_get_current_buf()
+  wrapped_formatting(bufnr)
+end, { desc = "Format current buffer with LSP" })

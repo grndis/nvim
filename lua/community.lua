@@ -7,8 +7,8 @@
 ---@type LazySpec
 return {
   "AstroNvim/astrocommunity",
-  { import = "astrocommunity.pack.lua" },
-  { import = "astrocommunity.recipes.heirline-mode-text-statusline" },
+  -- { import = "astrocommunity.pack.lua" },
+  -- { import = "astrocommunity.recipes.heirline-mode-text-statusline" },
   { import = "astrocommunity.completion.copilot-cmp" },
   { import = "astrocommunity.utility.noice-nvim" },
   { import = "astrocommunity.pack.lua" },

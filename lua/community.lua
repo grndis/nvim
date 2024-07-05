@@ -14,7 +14,7 @@ return {
   { import = "astrocommunity.utility.noice-nvim" },
   { import = "astrocommunity.pack.lua" },
   -- { import = "astrocommunity.pack.vue" },
-  { import = "astrocommunity.pack.php" },
+  -- { import = "astrocommunity.pack.php" },
   { import = "astrocommunity.pack.blade" },
   { import = "astrocommunity.recipes.neovide" },
   { import = "astrocommunity.recipes.heirline-vscode-winbar" },

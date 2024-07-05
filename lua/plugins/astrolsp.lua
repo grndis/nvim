@@ -19,10 +19,10 @@ return {
     },
     -- customize lsp formatting options
     formatting = {
-      -- filter = function(client)
-      --   if vim.bo.filetype == "php" then return client.name == "intelephense" end
-      --   return true
-      -- end,
+      filter = function(client)
+        if vim.bo.filetype == "php" then return client.name == "null-ls" end
+        return true
+      end,
       -- control auto formatting on save
       format_on_save = {
         enabled = true, -- enable or disable format on save globally
@@ -36,7 +36,7 @@ return {
       disabled = { -- disable formatting capabilities for the listed language servers
         -- disable lua_ls formatting capability if you want to use StyLua to format your lua code
         -- "lua_ls",
-        "intelphense",
+        -- "intelphense",
       },
       timeout_ms = 1000, -- default format timeout
       -- filter = function(client) -- fully override the default formatting function
@@ -56,13 +56,13 @@ return {
     handlers = {
       intelephense = function()
         require("lspconfig").intelephense.setup {
-          on_attach = function(client, bufnr)
-            -- Disable Intelephense's formatting capabilities
-            client.server_capabilities.documentFormattingProvider = false
-            client.server_capabilities.documentRangeFormattingProvider = false
+          -- on_attach = function(client, bufnr)
+          -- Disable Intelephense's formatting capabilities
+          -- client.server_capabilities.documentFormattingProvider = false
+          -- client.server_capabilities.documentRangeFormattingProvider = false
 
-            -- Your existing on_attach logic here...
-          end,
+          -- Your existing on_attach logic here...
+          -- end,
           settings = {
             intelephense = {
               stubs = {

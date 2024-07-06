@@ -21,6 +21,7 @@ return {
     formatting = {
       filter = function(client)
         if vim.bo.filetype == "php" then return client.name == "null-ls" end
+        if vim.bo.filetype == "vue" then return client.name == "null-ls" end
         return true
       end,
       -- control auto formatting on save
@@ -38,7 +39,7 @@ return {
         -- "lua_ls",
         -- "intelphense",
       },
-      timeout_ms = 1000, -- default format timeout
+      timeout_ms = 5000, -- default format timeout
       -- filter = function(client) -- fully override the default formatting function
       --   return true
       -- end

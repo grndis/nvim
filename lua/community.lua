@@ -11,6 +11,7 @@ return {
   -- { import = "astrocommunity.recipes.heirline-mode-text-statusline" },
   -- { import = "astrocommunity.editing-support.conform-nvim" },
   { import = "astrocommunity.completion.copilot-cmp" },
+  -- { import = "astrocommunity.completion.codeium-nvim" },
   { import = "astrocommunity.utility.noice-nvim" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.git.diffview-nvim" },

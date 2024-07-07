@@ -39,7 +39,7 @@ return {
         showbreak = "↪ ",
         breakindentopt = "shift:2,min:20",
         list = true,
-        listchars = { tab = "» ", trail = "·", extends = ">", precedes = "<", nbsp = "␣", space = "·" },
+        listchars = { tab = "⇥ ", trail = "·", extends = ">", precedes = "<", nbsp = "␣", space = "·" },
         -- cursorline options
         cursorline = true,
         termguicolors = true,

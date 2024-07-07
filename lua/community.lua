@@ -13,6 +13,7 @@ return {
   { import = "astrocommunity.completion.copilot-cmp" },
   { import = "astrocommunity.utility.noice-nvim" },
   { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.git.diffview-nvim" },
   -- { import = "astrocommunity.pack.vue" },
   -- { import = "astrocommunity.pack.php" },
   { import = "astrocommunity.pack.blade" },

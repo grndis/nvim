@@ -10,6 +10,7 @@ return {
   -- { import = "astrocommunity.pack.lua" },
   -- { import = "astrocommunity.recipes.heirline-mode-text-statusline" },
   -- { import = "astrocommunity.editing-support.conform-nvim" },
+  { import = "astrocommunity.editing-support.bigfile-nvim" },
   { import = "astrocommunity.completion.copilot-cmp" },
   -- { import = "astrocommunity.completion.codeium-nvim" },
   { import = "astrocommunity.utility.noice-nvim" },

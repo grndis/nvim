@@ -12,7 +12,7 @@ return {
   opts = {
     -- Configure core features of AstroNvim
     features = {
-      large_buf = { size = 1024 * 256, lines = 10000 }, -- set global limits for large files for disabling features like treesitter
+      -- large_buf = { size = 1024 * 256, lines = 10000 }, -- set global limits for large files for disabling features like treesitter
       autopairs = true, -- enable autopairs at start
       cmp = true, -- enable completion at start
       diagnostics_mode = 3, -- diagnostic mode on start (0 = off, 1 = no signs/virtual text, 2 = no virtual text, 3 = on)
@@ -36,10 +36,17 @@ return {
         breakindent = true,
         linebreak = true,
         breakat = [[\ \	;:,!?]],
-        showbreak = "↪ ",
+        showbreak = "↳ ",
         breakindentopt = "shift:2,min:20",
         list = true,
-        listchars = { tab = "⇥ ", trail = "·", extends = ">", precedes = "<", nbsp = "␣", space = "·" },
+        listchars = {
+          tab = "⇥ ",
+          trail = "·",
+          extends = ">",
+          precedes = "<",
+          nbsp = "␣",
+          space = "·",
+        },
         -- cursorline options
         cursorline = true,
         termguicolors = true,
